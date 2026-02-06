@@ -1,0 +1,74 @@
+[
+  {
+    "id": "tm-1",
+    "name": "Sarah Chen",
+    "role": "PM",
+    "avatar_color": "#6C2EB9",
+    "capacity_hours_per_week": 38,
+    "skills": ["project management", "stakeholder communication", "roadmapping", "agile"],
+    "current_workload_percent": 72
+  },
+  {
+    "id": "tm-2",
+    "name": "Marcus Johnson",
+    "role": "Frontend Dev",
+    "avatar_color": "#579BFC",
+    "capacity_hours_per_week": 36,
+    "skills": ["react", "typescript", "css", "performance optimization", "accessibility"],
+    "current_workload_percent": 85
+  },
+  {
+    "id": "tm-3",
+    "name": "Priya Patel",
+    "role": "Designer",
+    "avatar_color": "#FF642E",
+    "capacity_hours_per_week": 35,
+    "skills": ["ui design", "ux research", "figma", "prototyping", "design systems"],
+    "current_workload_percent": 65
+  },
+  {
+    "id": "tm-4",
+    "name": "Alex Rivera",
+    "role": "Backend Dev",
+    "avatar_color": "#00CA72",
+    "capacity_hours_per_week": 40,
+    "skills": ["node.js", "python", "databases", "api design", "devops"],
+    "current_workload_percent": 58
+  },
+  {
+    "id": "tm-5",
+    "name": "Jordan Lee",
+    "role": "QA",
+    "avatar_color": "#FDAB3D",
+    "capacity_hours_per_week": 36,
+    "skills": ["test automation", "manual testing", "performance testing", "accessibility testing"],
+    "current_workload_percent": 45
+  },
+  {
+    "id": "tm-6",
+    "name": "Emma Wilson",
+    "role": "Content",
+    "avatar_color": "#E44258",
+    "capacity_hours_per_week": 32,
+    "skills": ["copywriting", "seo", "content strategy", "technical writing"],
+    "current_workload_percent": 50
+  },
+  {
+    "id": "tm-7",
+    "name": "David Kim",
+    "role": "Frontend Dev",
+    "avatar_color": "#A25DDC",
+    "capacity_hours_per_week": 38,
+    "skills": ["react", "next.js", "animations", "testing", "graphql"],
+    "current_workload_percent": 78
+  },
+  {
+    "id": "tm-8",
+    "name": "Lisa Zhang",
+    "role": "Backend Dev",
+    "avatar_color": "#037F4C",
+    "capacity_hours_per_week": 40,
+    "skills": ["go", "kubernetes", "microservices", "databases", "monitoring"],
+    "current_workload_percent": 62
+  }
+]

@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root {
+  --mndy-header: #4A154B;
+  --mndy-accent: #6C2EB9;
+  --mndy-success: #00CA72;
+  --mndy-bg: #F6F7FB;
+  --mndy-card: #FFFFFF;
+  --mndy-border: #E6E9EF;
+  --mndy-text-primary: #323338;
+  --mndy-text-secondary: #676879;
+  --mndy-high: #E44258;
+  --mndy-medium: #FDAB3D;
+  --mndy-low: #579BFC;
+  --background: #F6F7FB;
+  --foreground: #323338;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--mndy-bg);
+  color: var(--mndy-text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* Custom scrollbar */
+.mndy-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.mndy-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.mndy-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--mndy-border);
+  border-radius: 3px;
+}
+.mndy-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #B0ADAB;
+}
+
+/* Kanban drag styles */
+.drag-over {
+  background-color: rgba(108, 46, 185, 0.05);
+  border-color: var(--mndy-accent);
+}
+
+/* Gantt tooltip */
+.gantt-tooltip {
+  pointer-events: none;
+  z-index: 50;
+}
+
+/* Animation for generated cards */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-in {
+  animation: slideInUp 0.3s ease-out forwards;
+}
+
+/* Modal backdrop */
+.modal-backdrop {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+}

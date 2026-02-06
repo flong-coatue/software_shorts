@@ -1,0 +1,201 @@
+@import "tailwindcss";
+
+:root {
+  /* FactSet Terminal Dark Theme */
+  --fds-bg-primary: #1a1c23;
+  --fds-bg-secondary: #22252e;
+  --fds-bg-tertiary: #2a2d37;
+  --fds-bg-surface: #1e2028;
+  --fds-bg-hover: #2f323d;
+  --fds-bg-selected: #2c3e5a;
+
+  --fds-border: #333640;
+  --fds-border-subtle: #2a2d37;
+
+  --fds-text-primary: #d4d7e0;
+  --fds-text-secondary: #8e929e;
+  --fds-text-tertiary: #5c6070;
+  --fds-text-bright: #eceef3;
+
+  --fds-accent-blue: #4a90d9;
+  --fds-accent-blue-dim: #2c5a8a;
+  --fds-accent-green: #3db87a;
+  --fds-accent-red: #e05252;
+  --fds-accent-orange: #e09040;
+  --fds-accent-yellow: #d4b84a;
+
+  --fds-header-bg: #14161c;
+  --fds-sidebar-bg: #16181f;
+  --fds-sidebar-active: #2c3e5a;
+
+  --fds-tab-active: #4a90d9;
+  --fds-tab-inactive: #5c6070;
+}
+
+@theme inline {
+  --color-background: var(--fds-bg-primary);
+  --color-foreground: var(--fds-text-primary);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--fds-bg-primary);
+  color: var(--fds-text-primary);
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100vh;
+}
+
+html {
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* FactSet-style scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--fds-bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--fds-border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--fds-text-tertiary);
+}
+
+/* Monospace numbers */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+/* Table styles matching FactSet */
+.fds-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+}
+.fds-table th {
+  background: var(--fds-bg-tertiary);
+  color: var(--fds-text-secondary);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.03em;
+  padding: 6px 10px;
+  text-align: right;
+  border-bottom: 1px solid var(--fds-border);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.fds-table th:first-child {
+  text-align: left;
+}
+.fds-table td {
+  padding: 5px 10px;
+  text-align: right;
+  border-bottom: 1px solid var(--fds-border-subtle);
+  color: var(--fds-text-primary);
+  font-variant-numeric: tabular-nums;
+}
+.fds-table td:first-child {
+  text-align: left;
+  color: var(--fds-text-secondary);
+  font-weight: 500;
+}
+.fds-table tr:hover td {
+  background: var(--fds-bg-hover);
+}
+
+/* Positive / Negative coloring */
+.fds-positive { color: var(--fds-accent-green); }
+.fds-negative { color: var(--fds-accent-red); }
+
+/* Section headers */
+.fds-section-header {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--fds-text-tertiary);
+  padding: 8px 0 4px 0;
+  border-bottom: 1px solid var(--fds-border-subtle);
+  margin-bottom: 6px;
+}
+
+/* Card style */
+.fds-card {
+  background: var(--fds-bg-secondary);
+  border: 1px solid var(--fds-border);
+  border-radius: 3px;
+}
+
+/* Tooltip style */
+.fds-tooltip {
+  background: var(--fds-bg-tertiary) !important;
+  border: 1px solid var(--fds-border) !important;
+  border-radius: 3px !important;
+  font-size: 11px !important;
+  color: var(--fds-text-primary) !important;
+  padding: 6px 10px !important;
+}
+
+/* Input styles */
+input[type="text"], input[type="search"] {
+  background: var(--fds-bg-primary);
+  border: 1px solid var(--fds-border);
+  color: var(--fds-text-primary);
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 2px;
+  outline: none;
+}
+input[type="text"]:focus, input[type="search"]:focus {
+  border-color: var(--fds-accent-blue);
+}
+
+/* Button styles */
+.fds-btn {
+  background: var(--fds-bg-tertiary);
+  border: 1px solid var(--fds-border);
+  color: var(--fds-text-secondary);
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.fds-btn:hover {
+  background: var(--fds-bg-hover);
+  color: var(--fds-text-primary);
+}
+.fds-btn.active {
+  background: var(--fds-accent-blue);
+  border-color: var(--fds-accent-blue);
+  color: white;
+}
+
+/* Badge */
+.fds-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 1px 6px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}

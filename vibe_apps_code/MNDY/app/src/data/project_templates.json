@@ -1,0 +1,296 @@
+[
+  {
+    "id": "tmpl-product-launch",
+    "name": "Product Launch",
+    "description": "End-to-end product launch from research through post-launch review",
+    "keywords": ["product", "launch", "release", "ship", "feature", "mvp", "go-to-market", "gtm"],
+    "tasks": [
+      {
+        "title": "Market Research & Competitive Analysis",
+        "description": "Analyze market landscape, identify competitors, and validate product-market fit",
+        "duration_days": 5,
+        "dependencies": [],
+        "default_role": "PM",
+        "priority": "high",
+        "estimated_hours": 30
+      },
+      {
+        "title": "Product Requirements Document",
+        "description": "Draft detailed PRD with user stories, acceptance criteria, and success metrics",
+        "duration_days": 4,
+        "dependencies": [0],
+        "default_role": "PM",
+        "priority": "high",
+        "estimated_hours": 24
+      },
+      {
+        "title": "UX Research & Wireframes",
+        "description": "User interviews, journey mapping, and low-fidelity wireframes",
+        "duration_days": 5,
+        "dependencies": [1],
+        "default_role": "Designer",
+        "priority": "high",
+        "estimated_hours": 32
+      },
+      {
+        "title": "Visual Design & Prototyping",
+        "description": "High-fidelity mockups, design system components, and interactive prototype",
+        "duration_days": 6,
+        "dependencies": [2],
+        "default_role": "Designer",
+        "priority": "high",
+        "estimated_hours": 40
+      },
+      {
+        "title": "Backend Architecture & API Design",
+        "description": "Design system architecture, API contracts, and database schema",
+        "duration_days": 4,
+        "dependencies": [1],
+        "default_role": "Backend Dev",
+        "priority": "high",
+        "estimated_hours": 28
+      },
+      {
+        "title": "Sprint 1 - Core Features",
+        "description": "Implement core backend services and frontend components",
+        "duration_days": 10,
+        "dependencies": [3, 4],
+        "default_role": "Frontend Dev",
+        "priority": "high",
+        "estimated_hours": 60
+      },
+      {
+        "title": "Sprint 2 - Integration & Polish",
+        "description": "API integration, edge cases, error handling, and UI polish",
+        "duration_days": 10,
+        "dependencies": [5],
+        "default_role": "Frontend Dev",
+        "priority": "medium",
+        "estimated_hours": 55
+      },
+      {
+        "title": "QA Testing & Bug Fixes",
+        "description": "Comprehensive test plan execution, regression testing, and bug remediation",
+        "duration_days": 7,
+        "dependencies": [6],
+        "default_role": "QA",
+        "priority": "high",
+        "estimated_hours": 45
+      },
+      {
+        "title": "Content & Documentation",
+        "description": "Help docs, onboarding flows, marketing copy, and release notes",
+        "duration_days": 5,
+        "dependencies": [6],
+        "default_role": "Content",
+        "priority": "medium",
+        "estimated_hours": 30
+      },
+      {
+        "title": "Launch Prep & Staging",
+        "description": "Deploy to staging, final stakeholder review, go/no-go checklist",
+        "duration_days": 3,
+        "dependencies": [7, 8],
+        "default_role": "PM",
+        "priority": "high",
+        "estimated_hours": 18
+      },
+      {
+        "title": "Go-Live & Monitoring",
+        "description": "Production deployment, monitoring dashboards, and incident response readiness",
+        "duration_days": 2,
+        "dependencies": [9],
+        "default_role": "Backend Dev",
+        "priority": "high",
+        "estimated_hours": 16
+      },
+      {
+        "title": "Post-Launch Review",
+        "description": "Analyze metrics, gather feedback, retrospective, and plan iterations",
+        "duration_days": 3,
+        "dependencies": [10],
+        "default_role": "PM",
+        "priority": "medium",
+        "estimated_hours": 18
+      }
+    ]
+  },
+  {
+    "id": "tmpl-website-redesign",
+    "name": "Website Redesign",
+    "description": "Complete website overhaul from audit through launch and optimization",
+    "keywords": ["website", "redesign", "web", "site", "homepage", "landing", "rebrand", "refresh"],
+    "tasks": [
+      {
+        "title": "Site Audit & Analytics Review",
+        "description": "Audit current site performance, UX issues, SEO gaps, and analytics data",
+        "duration_days": 4,
+        "dependencies": [],
+        "default_role": "PM",
+        "priority": "high",
+        "estimated_hours": 24
+      },
+      {
+        "title": "Information Architecture & Wireframes",
+        "description": "Restructure sitemap, navigation, and create wireframes for key pages",
+        "duration_days": 5,
+        "dependencies": [0],
+        "default_role": "Designer",
+        "priority": "high",
+        "estimated_hours": 32
+      },
+      {
+        "title": "Visual Design System",
+        "description": "Define typography, color palette, component library, and brand guidelines",
+        "duration_days": 6,
+        "dependencies": [1],
+        "default_role": "Designer",
+        "priority": "high",
+        "estimated_hours": 40
+      },
+      {
+        "title": "Content Strategy & Copywriting",
+        "description": "Develop content plan, write page copy, CTAs, and meta descriptions",
+        "duration_days": 7,
+        "dependencies": [1],
+        "default_role": "Content",
+        "priority": "medium",
+        "estimated_hours": 42
+      },
+      {
+        "title": "Frontend Development",
+        "description": "Build responsive pages, implement design system, and animations",
+        "duration_days": 12,
+        "dependencies": [2, 3],
+        "default_role": "Frontend Dev",
+        "priority": "high",
+        "estimated_hours": 72
+      },
+      {
+        "title": "CMS Integration & Backend",
+        "description": "Set up CMS, integrate APIs, forms, and dynamic content",
+        "duration_days": 8,
+        "dependencies": [4],
+        "default_role": "Backend Dev",
+        "priority": "medium",
+        "estimated_hours": 48
+      },
+      {
+        "title": "QA & Cross-Browser Testing",
+        "description": "Test across devices, browsers, accessibility audit, and performance optimization",
+        "duration_days": 5,
+        "dependencies": [5],
+        "default_role": "QA",
+        "priority": "high",
+        "estimated_hours": 35
+      },
+      {
+        "title": "Content Migration",
+        "description": "Migrate existing content, set up redirects, and verify SEO preservation",
+        "duration_days": 4,
+        "dependencies": [5],
+        "default_role": "Content",
+        "priority": "medium",
+        "estimated_hours": 24
+      },
+      {
+        "title": "Staging Review & Launch",
+        "description": "Final stakeholder review on staging, DNS cutover, and go-live",
+        "duration_days": 3,
+        "dependencies": [6, 7],
+        "default_role": "PM",
+        "priority": "high",
+        "estimated_hours": 18
+      },
+      {
+        "title": "Post-Launch Monitoring & Optimization",
+        "description": "Monitor analytics, fix launch issues, A/B tests, and performance tuning",
+        "duration_days": 5,
+        "dependencies": [8],
+        "default_role": "Frontend Dev",
+        "priority": "medium",
+        "estimated_hours": 30
+      }
+    ]
+  },
+  {
+    "id": "tmpl-q1-planning",
+    "name": "Q1 Planning",
+    "description": "Quarterly planning cycle from retrospective through team kickoff",
+    "keywords": ["planning", "quarterly", "q1", "q2", "q3", "q4", "okr", "strategy", "roadmap", "budget", "goals"],
+    "tasks": [
+      {
+        "title": "Previous Quarter Retrospective",
+        "description": "Review OKR outcomes, analyze wins/losses, and gather team feedback",
+        "duration_days": 3,
+        "dependencies": [],
+        "default_role": "PM",
+        "priority": "high",
+        "estimated_hours": 20
+      },
+      {
+        "title": "Goal Setting & OKR Definition",
+        "description": "Define quarterly objectives, key results, and success metrics",
+        "duration_days": 4,
+        "dependencies": [0],
+        "default_role": "PM",
+        "priority": "high",
+        "estimated_hours": 28
+      },
+      {
+        "title": "Budget Review & Allocation",
+        "description": "Review budget constraints, allocate resources, and approve spend",
+        "duration_days": 3,
+        "dependencies": [1],
+        "default_role": "PM",
+        "priority": "high",
+        "estimated_hours": 18
+      },
+      {
+        "title": "Product Roadmap Creation",
+        "description": "Prioritize features, create timeline, and align with business goals",
+        "duration_days": 5,
+        "dependencies": [1],
+        "default_role": "PM",
+        "priority": "high",
+        "estimated_hours": 32
+      },
+      {
+        "title": "Technical Roadmap & Debt Assessment",
+        "description": "Inventory tech debt, plan infrastructure upgrades, and capacity planning",
+        "duration_days": 4,
+        "dependencies": [3],
+        "default_role": "Backend Dev",
+        "priority": "medium",
+        "estimated_hours": 24
+      },
+      {
+        "title": "Resource Allocation & Hiring Plan",
+        "description": "Map team capacity to roadmap, identify gaps, and draft hiring reqs",
+        "duration_days": 3,
+        "dependencies": [2, 3],
+        "default_role": "PM",
+        "priority": "medium",
+        "estimated_hours": 18
+      },
+      {
+        "title": "Design Sprint Planning",
+        "description": "Plan design sprints, allocate design resources, and set up review cadence",
+        "duration_days": 3,
+        "dependencies": [3],
+        "default_role": "Designer",
+        "priority": "low",
+        "estimated_hours": 16
+      },
+      {
+        "title": "Team Kickoff & Communication",
+        "description": "All-hands presentation, team breakouts, and sprint zero planning",
+        "duration_days": 2,
+        "dependencies": [4, 5, 6],
+        "default_role": "PM",
+        "priority": "high",
+        "estimated_hours": 14
+      }
+    ]
+  }
+]

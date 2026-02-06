@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  --bk-header-green: #1B5E20;
+  --bk-accent: #4CAF50;
+  --bk-page-bg: #F5F5F5;
+  --bk-card-bg: #FFFFFF;
+  --bk-border: #E0E0E0;
+  --bk-text-primary: #212121;
+  --bk-text-secondary: #757575;
+  --bk-success: #2E7D32;
+  --bk-error: #C62828;
+  --bk-warning: #F9A825;
+  --background: #F5F5F5;
+  --foreground: #212121;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--bk-page-bg);
+  color: var(--bk-text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 13px;
+}
+
+/* Custom scrollbar */
+.bk-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.bk-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.bk-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--bk-border);
+  border-radius: 3px;
+}
+.bk-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #B0B0B0;
+}
+
+/* Smooth transitions on interactive elements */
+button, a {
+  transition: all 0.15s ease;
+}
+
+/* Table row hover */
+tr:hover td {
+  transition: background-color 0.1s ease;
+}

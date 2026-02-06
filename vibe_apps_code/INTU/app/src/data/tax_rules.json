@@ -1,0 +1,22 @@
+[
+  {"id":"TAX001","category":"sales_tax","name":"California State Sales Tax","rate":0.0725,"applicable_states":["CA"],"description":"Base California state sales tax rate on tangible goods"},
+  {"id":"TAX002","category":"sales_tax","name":"San Francisco County Tax","rate":0.0125,"applicable_states":["CA"],"description":"Additional county tax for San Francisco"},
+  {"id":"TAX003","category":"sales_tax","name":"California District Tax","rate":0.0050,"applicable_states":["CA"],"description":"Special district tax applicable in certain CA regions"},
+  {"id":"TAX004","category":"sales_tax","name":"New York State Sales Tax","rate":0.04,"applicable_states":["NY"],"description":"New York state base sales tax rate"},
+  {"id":"TAX005","category":"sales_tax","name":"NYC Local Sales Tax","rate":0.045,"applicable_states":["NY"],"description":"New York City local sales tax surcharge"},
+  {"id":"TAX006","category":"sales_tax","name":"Texas State Sales Tax","rate":0.0625,"applicable_states":["TX"],"description":"Texas state sales tax rate"},
+  {"id":"TAX007","category":"depreciation","name":"MACRS 5-Year Property","rate":0.20,"applicable_states":["ALL"],"description":"Modified Accelerated Cost Recovery for computers, office equipment (Year 1 rate)"},
+  {"id":"TAX008","category":"depreciation","name":"MACRS 7-Year Property","rate":0.1429,"applicable_states":["ALL"],"description":"Modified Accelerated Cost Recovery for furniture and fixtures (Year 1 rate)"},
+  {"id":"TAX009","category":"depreciation","name":"Section 179 Deduction","rate":1.0,"applicable_states":["ALL"],"description":"Full expensing of qualifying assets up to $1,160,000 for 2025"},
+  {"id":"TAX010","category":"depreciation","name":"Bonus Depreciation","rate":0.60,"applicable_states":["ALL"],"description":"60% bonus depreciation for 2025 (phasing down from 100%)"},
+  {"id":"TAX011","category":"deduction","name":"Home Office Deduction","rate":5.0,"applicable_states":["ALL"],"description":"Simplified method: $5 per sq ft, max 300 sq ft ($1,500)"},
+  {"id":"TAX012","category":"deduction","name":"Business Meals Deduction","rate":0.50,"applicable_states":["ALL"],"description":"50% deduction for business meals (post-2025 rate)"},
+  {"id":"TAX013","category":"deduction","name":"Vehicle Mileage Rate","rate":0.67,"applicable_states":["ALL"],"description":"Standard mileage rate per mile for business use of vehicle"},
+  {"id":"TAX014","category":"deduction","name":"Health Insurance Premium","rate":1.0,"applicable_states":["ALL"],"description":"100% deduction for self-employed health insurance premiums"},
+  {"id":"TAX015","category":"deduction","name":"QBI Deduction","rate":0.20,"applicable_states":["ALL"],"description":"Qualified Business Income deduction for pass-through entities (up to 20%)"},
+  {"id":"TAX016","category":"deduction","name":"Retirement Plan Contribution","rate":1.0,"applicable_states":["ALL"],"description":"Full deduction for SEP-IRA contributions up to 25% of net SE income"},
+  {"id":"TAX017","category":"sales_tax","name":"Software Services Exemption","rate":0.0,"applicable_states":["CA","TX","FL"],"description":"Professional/consulting services generally exempt from sales tax"},
+  {"id":"TAX018","category":"deduction","name":"State Income Tax - CA","rate":0.093,"applicable_states":["CA"],"description":"California top marginal income tax rate for businesses"},
+  {"id":"TAX019","category":"deduction","name":"Federal Corporate Tax Rate","rate":0.21,"applicable_states":["ALL"],"description":"Federal corporate income tax rate"},
+  {"id":"TAX020","category":"deduction","name":"Entertainment Expense","rate":0.0,"applicable_states":["ALL"],"description":"Entertainment expenses are NOT deductible (0% after TCJA)"}
+]
